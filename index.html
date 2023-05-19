@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="William Hilton's Portfolio">
+    <meta keywords="Web, Developer, Portfolio">
+    <meta name="author" content="William Hilton">
+    <title>William Hilton</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <h1>Portfolio</h1>
+    <nav id="nav">
+        <button onclick="document.getElementById('profile').scrollIntoView();">Profile</button>
+        <button onclick="document.getElementById('contact').scrollIntoView();">Contact</a>
+        <button onclick="document.getElementById('projects').scrollIntoView();">Projects</a>
+    </nav>
+
+    <video autoplay muted loop id="coverVideo">
+        <source src="images/black-121565(1).mp4" type="video/mp4">
+    </video>
+
+    <div class="coverContainer">
+        <h1>William G. Hilton</h1>
+        <h5><i>Web Developer</i></h5>
+
+        <div id="dynamicContent">
+            <p>I am a web developer with over 3 years of experience in HTML, CSS, JavaScript, and PHP. Proficient in all aspects of web development, from front-end design to back-end development. I additionally have experience in working with databases and user interfaces. I am a highly motivated and results-oriented individual with a strong work ethic. I am always looking for new challenges and opportunities to learn and grow.</p>
+        </div>
+
+        <svg onclick="showBio()" style="margin-right:10px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+
+          <svg onclick="showContact()" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+    </div>
+
+    <div class="menuAside">
+
+            <li></li><br>
+            <a href="profile.html">Profile</a><br><br>
+            <a href="contact.html">Contact</a><br><br>
+            <a href="projects.html">Projects</a>
+
+    </div>
 </body>
 </html>
