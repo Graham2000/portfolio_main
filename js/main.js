@@ -1,37 +1,30 @@
-function showContact() {
-    let cover = document.getElementById('dynamicContent');
-    cover.innerHTML = "<a href='https://www.linkedin.com/in/william-hilton-78528922a'>LinkedIn</a></br></br><a href='mailto:wghilton@pm.me'>Email</a></br></br><a href='https://github.com/Graham2000'>GitHub</a><br></br>";
+let iconContainer = document.getElementsByClassName('iconContainer')[0];
+let icon1 = document.getElementsByClassName('icon1')[0];
+let icon2 = document.getElementsByClassName('icon2')[0];
+
+onload = () => {
+    iconContainer.appendChild(icon1);
+    icon1.style.display = "block";
 }
 
+function displayNav() {
 
-function showBio() {
-    let cover = document.getElementById('dynamicContent');
-    cover.innerHTML = "<p>I am a web developer with over 3 years of experience in HTML, CSS, JavaScript, and PHP. Proficient in all aspects of web development, from front-end design to back-end development. I additionally have experience in working with databases and user interfaces. I am a highly motivated and results-oriented individual with a strong work ethic. I am always looking for new challenges and opportunities to learn and grow.</p>";
-}
+    let nav = document.getElementById('mobileNav');
 
-function submitForm(msg) {
-    let emailAddress = 'wghilton@pm.me';
+    if (nav.style.display == 'none') {
+        
+        // Display navigation menu
+        nav.style.display = 'block';
+        icon1.style.display = "none";
+        iconContainer.appendChild(icon2);
 
-    $.ajax({
-        url: `https://formsubmit.co/ajax/${emailAddress}`,
-        method: "POST",
-        data: {
-            message: msg,
-        },
-        dataType: "json",
-        success: function() {
-            alert('Your message has been sent!');
-        },
-        error: function() {
-            alert('An error occured!');
-        }
-    });
-}
+        // Display navigation icon
+        icon2.style.display = "block";
 
-function validateData(msg) {
-    if (msg) {
-        submitForm(msg);
-    } else {
-        alert('Please provide a message');
+    } else if (nav.style.display = 'block') {
+        nav.style.display = 'none';
+        icon1.style.display = "block";
+        icon2.style.display = "none";
     }
+
 }
