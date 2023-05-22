@@ -15,8 +15,10 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
+    <script src="js/submit.js"></script>
 </head>
 <body>
     <nav id="min-nav">
@@ -53,7 +55,36 @@
     <h5>Web Developer</h5>
     <p>I am a web developer with over 3 years of experience in HTML, CSS, JavaScript, and PHP. Proficient in all aspects of web development, from front-end design to back-end development. I additionally have experience in working with databases and user interfaces. I am a highly motivated and results-oriented individual with a strong work ethic. I am always looking for new challenges and opportunities to learn and grow.</p>
 
-    <footer>
+    <h1 style="padding-top: 100px;">Skills</h1>
+    <div class="skillsContainer">
+
+        <div class="skills">
+            <h3>Languages</h3>
+            <p>HTML, CSS, JavaScript, PHP, SQL</p>
+        </div>
+        <div class="skills">
+            <h3>Frameworks and Libraries</h3>
+            <p>Bootstrap, React, jQuery</p>
+        </div>
+        <div class="skills">
+            <h3>Technologies</h3>
+            <p>MS SQL Server, XAMPP, GIT, GitHub</p>
+        </div>
+    </div>
+
+    <h1 style="padding-top: 100px;">Want to connect?</h1>
+    <p>Send me a message</p>
+
+    <div class="contact">
+        <input type="text" placeholder="First Name" id="fName">
+        <input type="text" placeholder="Last Name" id="lName"><br>
+        <input type="phone" placeholder="Phone" id="phone">
+        <input type="email" placeholder="Email" id="email"><br>
+        <!--<textarea placeholder="Type a message..." cols="0" rows="10"></textarea><br>-->
+        <button onclick="validateForm()">Send Message</button>
+    </div>
+
+    <footer style="margin-top:100px;">
         <hr>
         <div style="display: flex;">
             <div>

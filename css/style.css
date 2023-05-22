@@ -2,10 +2,11 @@ html, body {
     color: #fff;
     background-color: rgb(29, 29, 32);
     margin: 0 5%;
-    padding: 10px;
 
     font-family: 'Roboto', sans-serif;
+    font-size: larger;
 
+    padding-top: 10px;
 }
 
 p {
@@ -17,7 +18,7 @@ p {
         display: none;
     }
 
-    .projects {
+    .projects, .skillsContainer {
         display: flex;
         flex-direction: row !important;
     }
@@ -79,4 +80,56 @@ footer {
 
 .item {
     flex: 1 1 0px;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+.skills {
+    padding: 10px;
+    margin: 30px;
+    background-color: rgb(29, 29, 32);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact input {
+    margin-bottom: 10px;
+
+    padding: 30px;
+    font-size: large;
+    background-color: rgb(29, 29, 32);
+    color: white;
+    border: 1px solid white;
+}
+
+.contact textarea {
+    font-size: large;
+    resize: none;
+    width: 100%;
+    background-color: rgb(29, 29, 32);
+    color: white;
+    padding: 30px;
+    border: 1px solid white;
+}
+
+.contact {
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact button {
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+
 }
