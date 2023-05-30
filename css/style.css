@@ -80,6 +80,7 @@ footer {
 
 .item {
     flex: 1 1 0px;
+    margin: 40px;
 }
 
 .skillsContainer {
