@@ -1,12 +1,9 @@
 html, body {
-    color: #fff;
     background-color: rgb(29, 29, 32);
-    margin: 0 5%;
+    /*margin: 0 5%;*/
 
     font-family: 'Roboto', sans-serif;
-    font-size: larger;
-
-    padding-top: 10px;
+    /*font-size: larger;*/
 }
 
 p {
@@ -18,10 +15,17 @@ p {
         display: none;
     }
 
-    .projects, .skillsContainer {
+    .skillsContainer {
         display: flex;
         flex-direction: row !important;
     }
+}
+
+@media screen and (min-width:1200px) {
+    .projects {
+        display: grid;
+        grid-template-columns: auto auto auto !important;
+    } 
 }
 
 @media screen and (max-width: 800px) {
@@ -56,8 +60,8 @@ p {
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
     margin: 10px;
     
 }
@@ -81,6 +85,10 @@ footer {
 .item {
     flex: 1 1 0px;
     margin: 40px;
+}
+
+.item img {
+    border-radius: 9px;
 }
 
 .skillsContainer {
@@ -134,3 +142,4 @@ footer {
     margin-top: 10px;
 
 }
+

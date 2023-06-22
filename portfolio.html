@@ -12,17 +12,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>William Hilton</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 <body>
+
+
     <nav class="navbar bg-body-tertiary p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./">About Me</a>
+          <a class="navbar-brand" href="./portfolio">Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,10 +35,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./">About Me</a>
+                  <a class="nav-link" href="./">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./portfolio">Portfolio</a>
+                  <a class="nav-link active" aria-current="page" href="./portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,72 +56,66 @@
         </div>
     </nav>
 
-    <div class="container my-5 d-flex justify-content-center align-items-center" style="height: 85vh;">
-        <div class="p-5 text-center bg-body-tertiary rounded-3">
-          <h1 class="text-body-emphasis mt-5">William G. Hilton</h1>
-          <p class="col-lg-8 mx-auto fs-5 text-muted">
-            Experienced software developer with three years of expertise in HTML, CSS, JavaScript, and PHP. Skilled in creating well-structured web pages using HTML5, implementing engaging layouts with CSS, and developing interactive applications with JavaScript. Proficient in server-side logic, database integration using PHP and SQL, and familiar with popular frameworks and libraries including Bootstrap and React. Strong problem-solving and debugging skills, adaptable to new technologies, and effective in cross-functional collaboration.
-          </p>
-          <div class="d-inline-flex gap-2 mb-5">
-            <button class="btn btn-primary btn-lg px-4 rounded-pill" type="button" onclick="showSkills()">
-              Skills
-            </button>
-            <a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" href="./portfolio">
-              Portfolio
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div style="height: 100px;"></div>
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center">
-        <h1 id="skillsSection" class="mb-5">Skills & Proficiencies</h1>
-        <div class="row">
-            <div class="col m-3">
-                <div class="card p-5 text-center bg-body-tertiary border-0 rounded-circle" style="height: 100%;">
-                    <h3 class="mb-3"><b>Languages</b></h3>
-                    <div class="m-2 p-2">
-                        <span class="p-2 me-2">HTML</span>
-                        <span class="p-2 me-2">CSS</span>
-                        <span class="p-2">JavaScript</span>
-                    </div>
-                    <div class="m-2 p-2">
-                        <span class="p-2 me-2">PHP</span>
-                        <span class="p-2">Java</span>
-                        <span class="p-2 me-2">SQL</span>
+    <div class="container p-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12 col-lg-5 m-3 mb-5">
+                <div class="card m-3" style="height: 600px;">
+                    <img class="mb-3 card-img-top" src="images/img1.jpg" width="100%">
+                    <div class="card-body">
+                        <h3 class="card-title">Property Management System</h3>
+                        <a href="https://propertiesmove.co.uk" class="card-link">Go to site</a><br><br>
+                        <p class="card-text">Enables buyers, renters, and sellers to search for properties, request information about available properties, and submit advertisement requests. A website administrator uses the admin portal to accept advertisement requests and provide feedback to the prospective seller.</p>
                     </div>
                 </div>
             </div>
-            <div class="col m-3">
-                <div class="card p-5 text-center bg-body-tertiary border-0 rounded-circle" style="height: 100%;">
-                    <h3 class="mb-3"><b>Frameworks and Libraries</b></h3>
-                    <div class="m-2 p-2">
-                        <span class="p-2 me-2">Bootstrap</span>
-                        <span class="p-2 me-2">React</span>
-                        <span class="p-2 me-2">jQuery</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-3">
-                <div class="card p-5 text-center bg-body-tertiary border-0 rounded-circle" style="height: 100%;">
-                    <h3 class="mb-3"><b>Technologies</b></h3>
-                    <div class="m-2 p-2">
-                        <span class="p-2 me-2">SQL Server</span>
-                        <span class="p-2 me-2">XAMPP</span>
-                        <span class="p-2">Git</span>
-                    </div>
-                    <div class="m-2 p-2">
-                        <span class="p-2 me-2">GitHub</span>
-                        <span class="p-2 me-2">AWS</span>
-                        <span class="p-2 me-2">VS Code</span>
+            <div class="col-sm-12 col-lg-5 m-3 mb-5">
+                <div class="card m-3" style="height: 600px;">
+                    <img class="mb-3 card-img-top" src="images/img4.jpg" width="100%">
+                    <div class="card-body">
+                        <h3><a>Notes React Application</a></h3>
+                        <span class="mb-3">
+                            <a href="https://graham2000.github.io/Notes/">Live Demo</a> | 
+                            <a href="https://github.com/Graham2000/Notes">View on GitHub</a>
+                        </span><br><br>
+                        <p class="card-subtitle mb-2 text-muted"><b>Tools used:</b> HTML, CSS, JavaScript, React, Web Storage API</p>
+                        <p>Allows the creation, editing, and deletion of notes. React state is used to track component updates and persistent data is stored in local storage using the Web Storage API.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
-
-      <div style="height: 100px;"></div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12 col-lg-5 m-3 mb-5">
+                <div class="card m-3" style="height: 600px;">
+                    <img class="mb-3 card-img-top" src="images/img3.jpg" width="100%">
+                    <div class="card-body">
+                        <h3><a>Wordle React Application</a></h3>
+                        <span class="mb-3">
+                            <a href="https://graham2000.github.io/wordle-react/">Live Demo</a> | 
+                            <a href="https://github.com/Graham2000/wordle-react">View on GitHub</a>
+                        </span><br><br>
+                        <p class="card-subtitle mb-2 text-muted"><b>Tools used:</b> HTML, CSS, JavaScript, React, Bootstrap, Web Storage API</p>
+                        <p>A clone of the traditional game using React that implements a word list to generate a word for each session and a guess list that users may use to guess the answer. Game statistics are stored using the Web Storage API.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-5 m-3 mb-5">
+                <div class="card m-3" style="height: 600px;">
+                    <img class="mb-3 card-img-top" src="images/img2.jpg" width="100%"><br>
+                    <div class="card-body">
+                        <h3><a>Tournament Bracket Generator</a></h3>
+                        <span class="mb-3">
+                            <a href="https://github.com/LU-Bracketify/Bracketify/tree/development">View on GitHub</a>
+                        </span><br><br>
+                        <p class="card-subtitle mb-2 text-muted"><b>Tools used:</b> HTML, CSS, JavaScript, IndexedDB</p>
+                        <p>Users may generate tournament brackets for their desired sport. The application supports creating, saving, and retrieving saved brackets. Bracket data is stored using the IndexedDB API.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="p-5" style="margin-top:100px;">
         <hr>
@@ -144,14 +139,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
-
-<script defer>
-    const showSkills = () => {
-        let skillsSection = document.getElementById("skillsSection");
-        skillsSection.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-    }
-
-</script>
